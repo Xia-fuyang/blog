@@ -15,13 +15,10 @@
     </header>
     <nav>
         <div class="menu">
-            <a href="" class="focus">首页</a>
-            <a href="">HTML</a>
-            <a href="">CSS</a>
-            <a href="">JAVASCRIPT</a>
-            <a href="">VUE</a>
-            <a href="">Angular</a>
-            <a href="">Express</a>
+            <a href="/" class="focus">首页</a>
+            {%for category in categories%}
+            <a href="/">{{category.name}}</a>
+            {%endfor%}
         </div>
     </nav>
     <main class="clear">
