@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 700px;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.backimg{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: url("../images/1.jpg") no-repeat 0 / 100% 100%;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    left: 48%;
+    left: calc(50% - 50px);
+    background: url(../images/touxiang.png) no-repeat 0 / 100% 100%;
+}
+
+nav{
+    padding: 10px calc(50% - 400px);
+}
+
+nav a{
+    text-decoration: none;
+    color: deepskyblue;
+    padding: 10px 12px 8px;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.focus {
+    border-bottom: 2px solid deepskyblue;
+}
+
+.clear {
+    background: #efefef;
+    overflow: hidden;
+}
+
+.mainLeft {
+    height: 100%;
+    width: 24%;
+    float: left;
+}
+
+.leftBox {
+    padding: 7%;
+    width: 86%;
+}
+
+.leftBox p {
+    padding: 5px 0 5px;
+}
+
+.title {
+    padding-bottom: 1px;
+    border-bottom: 2px solid rgba(200,200,200,0.7);
+    font-size: 140%;
+}
+
+.title span {
+    box-shadow: 0 6px 5px -2px rgba(255,128,0, 0.4);
+    font-family: STXingkai, Times, serif;
+}
+
+.colDark {
+    font-family: STKaiti, Times, serif;
+}
+
+.colDanger{
+    color: #ff6600;
+    font-family: STKaiti, Times, serif;
+}
+
+.line {
+    text-align: center;
+    padding: 3px 0 3px;
+}
+.line input {
+    width: 75%;
+    height: 28px;
+    text-indent: .4em;
+}
+.line button {
+    height: 28px;
+    width: 75%;
+    border: 0;
+    background: #ff6600;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.colWarning{
+    color: #ff6600;
+    font-family: STKaiti, Times, serif;
+}
+
+.textCenter {
+   text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.mainRight{
+    height: 96%;
+    width: 68%;
+    padding: 2% 4%;
+    float: left;
+}
+
+.listBox{
+    width: 92%;
+    padding: 2% 4%;
+    background: -webkit-linear-gradient(-120deg, transparent,transparent 1.5em, #ffffff 1.5em);
+    border-radius: .5em;
+    position: relative;
+}
+
+.listBox:before {
+    content: '';
+    position: absolute;
+    width: 1.73em;
+    height: 3em;
+    background: linear-gradient(to right top,rgba(0,0,0,.1) 0, rgba(0,0,0,.2) 50%, transparent 0);
+    transform: translateY(-1.3em) rotate(-30deg);
+    top: 0;
+    right: 0;
+    transform-origin: right bottom;
+    border-bottom-left-radius: inherit;
+    box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+}
+
+.listBox h1 {
+    font-family: STXingkai, Times, serif;
+    font-size: 400%;
+    text-align: center;
+}
+
+.colDefault {
+    text-align: center;
+}
+
+.colInfo{
+    color: #00ccff;
+}
+
+.pager {
+    padding: 2% 4%;
+}
+
+.pager .clear {
+    list-style: none;
+    width:100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.pager .clear li{
+    display: inline;
+    /*float: left;*/
+    padding: 0 2%;
+}
+
+.previous a,.next a {
+    text-decoration: none;
+    color: #00ccff;
+}

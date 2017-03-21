@@ -1,0 +1,17 @@
+<nav aria-label="Page navigation" style="text-align: center;">
+    <ul class="pagination">
+        <li>
+            <a href="/admin/user?page={{page-1}}" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        {% for num in a %}
+        <li><a href="/admin/user?page={{loop.index}}">{{loop.index}}</a></li>
+        {% endfor %}
+        <li>
+            <a href="/admin/user?page={% if a.length == 1 %}1{% else %}{{page+1}}{%endif%}" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
