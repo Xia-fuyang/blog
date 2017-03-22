@@ -5,10 +5,10 @@
 <div class="listBox">
     <h1>{{content.title}}</h1>
     <p class="colDefault">
-        作者：<span class="colInfo">{{content.user.username}}</span>
-        时间：<span class="colInfo">{{content.addTime|date('Y-m-d H:i:s', -8*20)}}</span>
-        阅读：<span class="colInfo">{{content.views}}</span>
-        评论：<span class="colInfo">0</span>
+        作者：<span class="colInfo">{{content.user.username}}</span> -
+        时间：<span class="colInfo">{{content.addTime|date('Y-m-d H:i:s', -8*20)}}</span> -
+        阅读：<span class="colInfo">{{content.views}}</span> -
+        评论：<span class="colInfo">{{content.comments.length}}</span>
     </p>
     <dfn><p>{{content.description}}</p></dfn>
     <div class="btnRight"><a href="/view?contentid={{content.id}}">

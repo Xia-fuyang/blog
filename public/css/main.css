@@ -240,3 +240,53 @@ dfn{
 .previous span,.next span {
     cursor: default;
 }
+
+#messageContent {
+    width: 88%;
+    height: 100px;
+    font-size: 130%;
+    resize: none;
+    border: 1px solid #00ccff;
+    vertical-align: middle;
+    text-indent: .4em;
+    line-height: 2em;
+}
+.submit {
+    width: 10%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border: 0;
+    vertical-align: middle;
+    background: #00ccff;
+    color: #fff;
+    box-sizing: content-box;
+}
+
+.messageBox {
+    padding: 2%;
+    border-bottom: 1px solid #cccccc;
+}
+
+.messageBox p:nth-child(2) {
+    padding-left: 2%;
+}
+
+.name{
+    font-size: 110%;
+    font-weight: 800;
+    padding-bottom: .3em;
+}
+
+.fr{
+    float: right;
+}
+
+.showMessage{
+    text-align: center;
+    padding: 3%;
+}
+
+input,button,select,textarea{
+    outline:none
+}

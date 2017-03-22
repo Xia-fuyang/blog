@@ -4,9 +4,9 @@
 <div class="listBox">
     <h1>{{content.title}}</h1>
     <p class="colDefault">
-        作者：<span class="colInfo">{{content.user.username}}</span>
-        时间：<span class="colInfo">{{content.addTime|date('Y-m-d H:i:s', -8*20)}}</span>
-        阅读：<span class="colInfo">{{content.views}}</span>
+        作者：<span class="colInfo">{{content.user.username}}</span> -
+        时间：<span class="colInfo">{{content.addTime|date('Y-m-d H:i:s', -8*20)}}</span> -
+        阅读：<span class="colInfo">{{content.views}}</span> -
         评论：<span class="colInfo">0</span>
     </p>
     <dfn>
@@ -22,12 +22,31 @@
     {% if userInfo._id %}
     <p class="textLeft">{{userInfo.username}}</p>
     <p class="textLeft">
-        <textarea name="" id="messageContent" cols="30" rows="5"></textarea>
+        <textarea name="" id="messageContent"></textarea>
+        <input type="hidden" id="contentId" value="{{content.id}}">
         <button class="submit" id="messageBtn">提交</button>
     </p>
     {% else %}
     <p class="bgDanger">您还没有登录，请先登录！</p>
     {% endif %}
+
+    <div class="messageList">
+
+    </div>
+
+    <div class="pager">
+        <ul class="clear">
+            <li class="previous">
+                <a href="">上一页</a>
+            </li>
+            <li></li>
+            <li class="next">
+                <a href="">下一页</a>
+            </li>
+        </ul>
+    </div>
+
 </div>
 
+<script src="/public/js/comment.js"></script>
 {% endblock %}
