@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+}
 
 body{
     min-width: 700px;
@@ -143,6 +146,7 @@ nav a:hover{
     background: -webkit-linear-gradient(-120deg, transparent,transparent 1.5em, #ffffff 1.5em);
     border-radius: .5em;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .listBox:before {
@@ -160,6 +164,7 @@ nav a:hover{
 }
 
 .listBox h1 {
+    padding: .30em 0;
     font-family: STXingkai, Times, serif;
     font-size: 400%;
     text-align: center;
@@ -171,6 +176,43 @@ nav a:hover{
 
 .colInfo{
     color: #00ccff;
+}
+
+dfn{
+    display: block;
+    padding: 1.5em 0;
+}
+
+.btnRight {
+    width:100%;
+    overflow: hidden;
+}
+
+.function{
+    margin-top: 15px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    width: 100px;
+    background: #ff6600;
+    text-align: center;
+    float: right;
+}
+
+.textLeft{
+    text-align: left;
+    padding: 8px 0;
+}
+
+.em {
+    float: right;
+}
+
+.tips{
+    padding: 2% 4%;
+    text-align: center;
+    font-size: 200%;
+    font-family: STXingkai, Times, serif;
 }
 
 .pager {
@@ -187,10 +229,14 @@ nav a:hover{
 .pager .clear li{
     display: inline;
     /*float: left;*/
-    padding: 0 2%;
+    padding: 0 6%;
 }
 
 .previous a,.next a {
     text-decoration: none;
     color: #00ccff;
+}
+
+.previous span,.next span {
+    cursor: default;
 }

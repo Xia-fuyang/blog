@@ -296,13 +296,13 @@ router.get("/content", function(req, res) {
          * 1:升序
          * -1:降序
          * */
-        Content.find().sort({_id: -1}).limit(limit).skip(skip).populate("category").then(function(contents) {
+        Content.find().sort({_id: -1}).limit(limit).skip(skip).populate(["category","user"]).then(function(contents) {
             res.render("admin/content_index",{
                 userInfo: req.userInfo,
                 contents: contents,
                 page: page,
                 a: a,
-                url: "/admin/content"
+                url: "content"
             });
         });
     });
@@ -339,6 +339,7 @@ router.post("/content/add", function(req, res) {
     new Content({
         category: req.body.category,
         title: req.body.title,
+        user: req.userInfo._id.toString(),
         description: req.body.description,
         content: req.body.content
     }).save().then(function(rs) {
@@ -405,6 +406,7 @@ router.post("/content/edit", function(req, res) {
     },{
         category: req.body.category,
         title: req.body.title,
+        user: req.userInfo._id.toString(),
         description: req.body.description,
         content: req.body.content
     }).then(function(){
